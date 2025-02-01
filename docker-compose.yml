@@ -21,6 +21,9 @@ x-n8n: &service-n8n
     - N8N_ENCRYPTION_KEY
     - N8N_USER_MANAGEMENT_JWT_SECRET
     - N8N_SECURE_COOKIE=false
+    - N8N_SSL_CERT=/home/node/cool.pem
+    - N8N_SSL_KEY=/home/node/cool.key
+    - N8N_PROTOCOL="https" 
   links:
     - postgres
 
